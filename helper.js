@@ -5,5 +5,14 @@ module.exports = {
     },
     getElementByText: async function(obj) {
         return await $(`div=${obj.toString()}`);
-    }
+    },
+    getCreditCardNumber: function() {
+        const cardNumber = Math.floor(Math.random() * 10000000000000000);
+        return cardNumber;
+    },
+    getCVVcode: function() {
+        const cvvCode = Math.floor(Math.random() * 100);
+        return cvvCode;
+
+    },
 };
